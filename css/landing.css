@@ -1,0 +1,154 @@
+/* ========================================
+   RESET & BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   LANDING PAGE - CONTAINER PRINCIPAL
+======================================== */
+.landing {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Dégradé orangé chaleureux - du brun/noir vers orange */
+    background: linear-gradient(
+        135deg,
+        #1a0a00 0%,
+        #2d1810 20%,
+        #4a2512 35%,
+        #6b3a1a 50%,
+        #8b4f24 65%,
+        #b86b2e 80%,
+        #d4823a 100%
+    );
+    
+    /* Police serif élégante */
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    color: #ffffff;
+    text-align: center;
+    
+    /* Animation d'entrée subtile */
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   CONTENU CENTRAL
+======================================== */
+.landing__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    /* Animation d'apparition */
+    animation: slideUp 1.2s ease-out 0.3s both;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   TITRE PRINCIPAL
+======================================== */
+.landing__title {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    
+    /* Ombre subtile pour profondeur */
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   SOUS-TITRE
+======================================== */
+.landing__subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 3rem;
+}
+
+/* ========================================
+   BOUTON D'ACTION
+======================================== */
+.landing__button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    
+    /* Style discret et élégant */
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    
+    /* Typographie cohérente */
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    
+    /* Curseur et transition */
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.landing__button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.landing__button:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 768px) {
+    .landing__title {
+        letter-spacing: 0.1em;
+    }
+    
+    .landing__subtitle {
+        letter-spacing: 0.2em;
+    }
+    
+    .landing__button {
+        padding: 0.875rem 2.5rem;
+        font-size: 0.9rem;
+    }
+}
