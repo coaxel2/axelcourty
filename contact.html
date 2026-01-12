@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Axel Courty</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS externe -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <a href="index.html" class="header__back">← Retour</a>
+    </header>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact">
+        <div class="contact__container">
+            <div class="contact__content">
+                <h1 class="contact__title">Travaillons ensemble</h1>
+                <p class="contact__subtitle">
+                    Vous avez un projet digital ? Une opportunité de collaboration ?<br>
+                    Je serais ravi d'échanger avec vous.
+                </p>
+
+                <!-- FORMULAIRE DE CONTACT -->
+                <form class="contact__form" action="#" method="POST">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nom complet</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form__input" 
+                            placeholder="Jean Dupont"
+                            required
+                        >
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Adresse email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form__input" 
+                            placeholder="jean.dupont@exemple.fr"
+                            required
+                        >
+                    </div>
+
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Téléphone (optionnel)</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            class="form__input" 
+                            placeholder="+33 6 12 34 56 78"
+                        >
+                    </div>
+
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Sujet</label>
+                        <select id="subject" name="subject" class="form__select" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="mission">Mission / Collaboration</option>
+                            <option value="emploi">Opportunité d'emploi</option>
+                            <option value="projet">Projet digital</option>
+                            <option value="conseil">Demande de conseil</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form__textarea" 
+                            rows="6"
+                            placeholder="Décrivez votre projet ou votre demande..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="form__button">
+                        Envoyer le message
+                    </button>
+                </form>
+
+                <!-- INFORMATIONS DIRECTES -->
+                <div class="contact__direct">
+                    <p class="contact__direct-title">Ou contactez-moi directement :</p>
+                    <div class="contact__info">
+                        <a href="mailto:axel.courty@orange.fr" class="contact__link">
+                            <span class="contact__icon">✉</span>
+                            axel.courty@orange.fr
+                        </a>
+                        <a href="https://linkedin.com/in/axelcourty" target="_blank" class="contact__link">
+                            <span class="contact__icon">in</span>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

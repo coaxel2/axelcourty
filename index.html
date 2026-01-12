@@ -3,20 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil | Axel Courty</title>
+    <title>Axel Courty | Chef de projet digital</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- CSS externe -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenue</h1>
-        <p>Contenu de la page d'accueil à personnaliser.</p>
-        <a href="landing.html" class="back-link">← Retour</a>
-    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Transformer les idées<br>en projets concrets</h1>
+                <p class="hero__subtitle">Chef de projet digital passionné par l'innovation<br>et l'excellence opérationnelle</p>
+                <a href="contact.html" class="hero__cta">Contactez-moi</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Défiler</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- CE QUE JE RECHERCHE -->
+    <section class="search">
+        <div class="container">
+            <h2 class="section__title">Ce que je recherche</h2>
+            <p class="search__intro">
+                Des missions et opportunités où je peux mettre mon expertise au service 
+                de projets ambitieux et créer de la valeur ajoutée mesurable.
+            </p>
+            <div class="search__cards">
+                <div class="search__card">
+                    <div class="search__icon">🚀</div>
+                    <h3>Gestion de projets digitaux</h3>
+                    <p>Pilotage de A à Z de projets web, applications, plateformes e-commerce avec méthodologies agiles</p>
+                </div>
+                <div class="search__card">
+                    <div class="search__icon">🎯</div>
+                    <h3>Coordination transverse</h3>
+                    <p>Animation d'équipes pluridisciplinaires, alignement des parties prenantes, suivi budgétaire</p>
+                </div>
+                <div class="search__card">
+                    <div class="search__icon">⚡</div>
+                    <h3>Transformation digitale</h3>
+                    <p>Accompagnement au changement, refonte de process, optimisation de l'expérience utilisateur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CE QUE JE SAIS FAIRE -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section__title section__title--light">Ce que je sais faire</h2>
+            
+            <div class="skills__grid">
+                <!-- Colonne 1 : Méthodes -->
+                <div class="skills__column">
+                    <h3 class="skills__subtitle">Méthodes & Pilotage</h3>
+                    <ul class="skills__list">
+                        <li>Gestion de projet Agile (Scrum, Kanban)</li>
+                        <li>Méthode Waterfall / Cycle en V</li>
+                        <li>Design Thinking & Lean Startup</li>
+                        <li>Roadmapping & priorisation</li>
+                        <li>Planification stratégique</li>
+                        <li>Gestion des risques</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 2 : Compétences digitales -->
+                <div class="skills__column">
+                    <h3 class="skills__subtitle">Digital & UX</h3>
+                    <ul class="skills__list">
+                        <li>UX/UI Design & prototypage</li>
+                        <li>SEO / SEA / Analytics</li>
+                        <li>Content Management (CMS)</li>
+                        <li>E-commerce & conversion</li>
+                        <li>Stratégie Social Media</li>
+                        <li>Accessibilité & RGPD</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Outils -->
+                <div class="skills__column">
+                    <h3 class="skills__subtitle">Outils & Technologies</h3>
+                    <ul class="skills__list">
+                        <li>Jira, Trello, Asana, Monday</li>
+                        <li>Figma, Adobe XD, Sketch</li>
+                        <li>Google Analytics, Hotjar</li>
+                        <li>Notion, Confluence, Miro</li>
+                        <li>Slack, Teams, Zoom</li>
+                        <li>Git, SQL, HTML/CSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Points forts -->
+            <div class="skills__highlights">
+                <div class="highlight">
+                    <span class="highlight__number">+50</span>
+                    <span class="highlight__label">Projets livrés</span>
+                </div>
+                <div class="highlight">
+                    <span class="highlight__number">100%</span>
+                    <span class="highlight__label">Satisfaction client</span>
+                </div>
+                <div class="highlight">
+                    <span class="highlight__number">5 ans</span>
+                    <span class="highlight__label">D'expérience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Axel Courty — Chef de projet digital</p>
+            <div class="footer__links">
+                <a href="https://linkedin.com/in/axelcourty" target="_blank">LinkedIn</a>
+                <a href="mailto:axel.courty@orange.fr">Email</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

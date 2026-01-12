@@ -7,54 +7,419 @@
     box-sizing: border-box;
 }
 
-/* ========================================
-   BODY - PAGE D'ACCUEIL
-======================================== */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    min-height: 100vh;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    background: #1a1a1a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0a0a;
     color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+.hero {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
+    /* Dégradé orangé cohérent avec landing */
+    background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #1a0800 15%,
+        #4a1a00 30%,
+        #8a2e00 45%,
+        #c44200 55%,
+        #e85500 70%,
+        #ff6600 85%,
+        #ff7020 100%
+    );
+    
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero__container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content {
+    animation: slideUp 1s ease-out 0.3s both;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero__title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero__subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 300;
+    opacity: 0.95;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.hero__cta {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.hero__cta:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero__scroll {
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0.7;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero__scroll span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.hero__scroll-line {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ========================================
+   SECTION TITLES
+======================================== */
+.section__title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 0.02em;
+    color: #ff6600;
+}
+
+.section__title--light {
+    color: #ffffff;
+}
+
+/* ========================================
+   CE QUE JE RECHERCHE
+======================================== */
+.search {
+    padding: 8rem 0;
+    background: #0f0f0f;
+}
+
+.search__intro {
+    text-align: center;
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+.search__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.search__card {
+    background: rgba(255, 102, 0, 0.05);
+    border: 1px solid rgba(255, 102, 0, 0.2);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.search__card:hover {
+    background: rgba(255, 102, 0, 0.1);
+    border-color: rgba(255, 102, 0, 0.4);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 102, 0, 0.15);
+}
+
+.search__icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.search__card h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #ff6600;
+}
+
+.search__card p {
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* ========================================
+   CE QUE JE SAIS FAIRE
+======================================== */
+.skills {
+    padding: 8rem 0;
+    background: linear-gradient(180deg, #0f0f0f 0%, #1a0800 100%);
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.skills__column {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.skills__column:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 102, 0, 0.3);
+}
+
+.skills__subtitle {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #ff6600;
+}
+
+.skills__list {
+    list-style: none;
+}
+
+.skills__list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.skills__list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #ff6600;
+    font-size: 1.2rem;
+}
+
+.skills__list li:hover {
+    opacity: 1;
+    padding-left: 2rem;
+    color: #ff6600;
+}
+
+/* Points forts */
+.skills__highlights {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255, 102, 0, 0.2);
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlight__number {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ff6600;
+}
+
+.highlight__label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.8;
+}
+
+/* ========================================
+   CTA CONTACT
+======================================== */
+.contact {
+    padding: 8rem 0;
+    background: #0a0a0a;
     text-align: center;
 }
 
-/* ========================================
-   CONTAINER
-======================================== */
-.container {
-    padding: 2rem;
+.contact__title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
 }
 
-/* ========================================
-   TYPOGRAPHIE
-======================================== */
-h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    margin-bottom: 1rem;
-}
-
-p {
+.contact__text {
     font-size: 1.2rem;
-    opacity: 0.8;
-    margin-bottom: 2rem;
+    opacity: 0.85;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.contact__button {
+    display: inline-block;
+    padding: 1.2rem 3.5rem;
+    background: #ff6600;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
+}
+
+.contact__button:hover {
+    background: #ff7020;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(255, 102, 0, 0.5);
 }
 
 /* ========================================
-   LIENS
+   FOOTER
 ======================================== */
-.back-link {
-    color: #d4823a;
+.footer {
+    padding: 3rem 0;
+    background: #000000;
+    border-top: 1px solid rgba(255, 102, 0, 0.2);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.footer__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__links a {
+    color: #ff6600;
     text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
+    font-size: 0.9rem;
     transition: opacity 0.3s ease;
 }
 
-.back-link:hover {
+.footer__links a:hover {
     opacity: 0.7;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+    
+    .search__cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills__highlights {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
