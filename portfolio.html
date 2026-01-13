@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel Courty | Portfolio - Chef de projet digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS externe -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- BOUTON PDF STICKY -->
+    <a href="cv-axel-courty.pdf" download class="pdf-button">
+        <span class="pdf-button__icon">📄</span>
+        <span class="pdf-button__text">Télécharger CV</span>
+    </a>
+
+    <!-- CURSEUR PERSONNALISÉ -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- BARRE DE PROGRESSION -->
+    <div class="progress-bar"></div>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="portfolio">
+        
+        <!-- SIDEBAR ORANGE -->
+        <aside class="sidebar">
+            <div class="sidebar__content">
+                
+                <!-- Photo / Avatar -->
+                <div class="sidebar__header" data-animate="fade-down">
+                    <div class="sidebar__avatar">AC</div>
+                    <h2 class="sidebar__name">Axel Courty</h2>
+                    <p class="sidebar__role">Chef de projets Digital</p>
+                </div>
+
+                <!-- Contact -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="100">
+                    <h3 class="sidebar__title">Contact</h3>
+                    <ul class="sidebar__list">
+                        <li><span class="icon">📍</span> Paris, France</li>
+                        <li><span class="icon">✉</span> axel.courty@orange.fr</li>
+                        <li><span class="icon">🔗</span> linkedin.com/in/axelcourty</li>
+                    </ul>
+                </div>
+
+                <!-- Formations -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="200">
+                    <h3 class="sidebar__title">Formations</h3>
+                    <div class="formation">
+                        <span class="formation__year">2024-2026</span>
+                        <span class="formation__name">MBA Chef de projet digital</span>
+                        <span class="formation__school">MyDigitalSchool Paris</span>
+                    </div>
+                    <div class="formation">
+                        <span class="formation__year">2021-2024</span>
+                        <span class="formation__name">Bachelor Webmarketing</span>
+                        <span class="formation__school">MyDigitalSchool Paris</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="300">
+                    <h3 class="sidebar__title">Soft Skills</h3>
+                    <div class="tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Résolution de problèmes</span>
+                        <span class="tag">Adaptabilité</span>
+                        <span class="tag">Esprit d'équipe</span>
+                        <span class="tag">Créativité</span>
+                    </div>
+                </div>
+
+                <!-- Hard Skills -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="400">
+                    <h3 class="sidebar__title">Hard Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-bar__label">Gestion de projet</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-bar__label">UX/UI Design</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-bar__label">SEO / Analytics</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-bar__label">Marketing Digital</span>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logiciels -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="500">
+                    <h3 class="sidebar__title">Logiciels</h3>
+                    <div class="tools">
+                        <div class="tool" data-tooltip="Figma">
+                            <span>🎨</span>
+                        </div>
+                        <div class="tool" data-tooltip="Notion">
+                            <span>📝</span>
+                        </div>
+                        <div class="tool" data-tooltip="Jira">
+                            <span>📊</span>
+                        </div>
+                        <div class="tool" data-tooltip="Adobe Suite">
+                            <span>🖼️</span>
+                        </div>
+                        <div class="tool" data-tooltip="Trello">
+                            <span>📋</span>
+                        </div>
+                        <div class="tool" data-tooltip="Analytics">
+                            <span>📈</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Langues -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="600">
+                    <h3 class="sidebar__title">Langues</h3>
+                    <div class="languages">
+                        <div class="language">
+                            <span class="language__name">Français</span>
+                            <div class="language__dots">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <span class="language__name">Anglais</span>
+                            <div class="language__dots">
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loisirs -->
+                <div class="sidebar__section" data-animate="fade-right" data-delay="700">
+                    <h3 class="sidebar__title">Loisirs</h3>
+                    <div class="hobbies">
+                        <span class="hobby">🏃 Running</span>
+                        <span class="hobby">📚 Lecture</span>
+                        <span class="hobby">🎮 Gaming</span>
+                        <span class="hobby">✈️ Voyages</span>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- CONTENU PRINCIPAL -->
+        <main class="main">
+            
+            <!-- HERO / PROFIL -->
+            <section class="hero-profile" data-animate="fade-up">
+                <div class="hero-profile__content">
+                    <p class="hero-profile__greeting">Bienvenue sur mon portfolio</p>
+                    <h1 class="hero-profile__title">
+                        <span class="line">Je transforme</span>
+                        <span class="line highlight">vos idées digitales</span>
+                        <span class="line">en succès concrets</span>
+                    </h1>
+                    <p class="hero-profile__description">
+                        Chef de projet digital passionné avec une expertise en gestion de projets web, 
+                        UX design et stratégie digitale. J'accompagne les entreprises dans leur 
+                        transformation numérique avec rigueur, créativité et une vision orientée résultats.
+                    </p>
+                    <div class="hero-profile__cta">
+                        <a href="contact.html" class="btn btn--primary">Travaillons ensemble</a>
+                        <a href="#experiences" class="btn btn--secondary">Découvrir mon parcours</a>
+                    </div>
+                </div>
+                <div class="hero-profile__visual">
+                    <div class="floating-shapes">
+                        <div class="shape shape--1"></div>
+                        <div class="shape shape--2"></div>
+                        <div class="shape shape--3"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPÉRIENCES -->
+            <section class="experiences" id="experiences">
+                <h2 class="section-title" data-animate="fade-up">
+                    <span class="section-title__number">01</span>
+                    <span class="section-title__text">Expériences professionnelles</span>
+                </h2>
+
+                <div class="timeline">
+                    <!-- Orange -->
+                    <div class="timeline__item" data-animate="fade-left">
+                        <div class="timeline__marker">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <span class="timeline__date">2024 - Présent</span>
+                                <span class="timeline__company">Orange</span>
+                            </div>
+                            <h3 class="timeline__title">Chef de projet digital</h3>
+                            <p class="timeline__description">
+                                Pilotage de projets de transformation digitale pour les services B2B. 
+                                Coordination des équipes techniques et métiers, gestion du backlog produit, 
+                                mise en place de méthodologies agiles et suivi des KPIs de performance.
+                            </p>
+                            <div class="timeline__tags">
+                                <span>Agile</span>
+                                <span>Product Management</span>
+                                <span>B2B</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- L'Atelier Immobilier -->
+                    <div class="timeline__item" data-animate="fade-right">
+                        <div class="timeline__marker">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <span class="timeline__date">2023 - 2024</span>
+                                <span class="timeline__company">L'Atelier Immobilier</span>
+                            </div>
+                            <h3 class="timeline__title">Chef de projet web</h3>
+                            <p class="timeline__description">
+                                Refonte complète du site web et optimisation de l'expérience utilisateur. 
+                                Mise en place d'une stratégie SEO ayant généré +150% de trafic organique. 
+                                Gestion de campagnes marketing digitales et analyse des performances.
+                            </p>
+                            <div class="timeline__tags">
+                                <span>SEO</span>
+                                <span>UX Design</span>
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boulanger -->
+                    <div class="timeline__item" data-animate="fade-left">
+                        <div class="timeline__marker">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <span class="timeline__date">2022 - 2023</span>
+                                <span class="timeline__company">Boulanger</span>
+                            </div>
+                            <h3 class="timeline__title">Assistant chef de projet e-commerce</h3>
+                            <p class="timeline__description">
+                                Support à la gestion du catalogue produits en ligne et optimisation des fiches produits. 
+                                Participation aux projets d'amélioration du parcours client et analyse des données de vente.
+                            </p>
+                            <div class="timeline__tags">
+                                <span>E-commerce</span>
+                                <span>CMS</span>
+                                <span>Data</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SuperValu -->
+                    <div class="timeline__item" data-animate="fade-right">
+                        <div class="timeline__marker">
+                            <div class="timeline__dot"></div>
+                        </div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <span class="timeline__date">2021</span>
+                                <span class="timeline__company">SuperValu</span>
+                            </div>
+                            <h3 class="timeline__title">Stage marketing digital</h3>
+                            <p class="timeline__description">
+                                Première expérience internationale en Irlande. Participation à la stratégie 
+                                social media et création de contenus visuels pour les campagnes promotionnelles.
+                            </p>
+                            <div class="timeline__tags">
+                                <span>Social Media</span>
+                                <span>Content</span>
+                                <span>International</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJET SCOLAIRE -->
+            <section class="project" data-animate="fade-up">
+                <h2 class="section-title">
+                    <span class="section-title__number">02</span>
+                    <span class="section-title__text">Projet phare</span>
+                </h2>
+
+                <div class="project-card">
+                    <div class="project-card__visual">
+                        <div class="project-card__mockup">
+                            <div class="mockup-browser">
+                                <div class="mockup-browser__dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-browser__content">
+                                    <span class="mockup-title">Nuits Élégantes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__type">Projet scolaire — MBA</span>
+                        <h3 class="project-card__title">Nuits Élégantes</h3>
+                        <p class="project-card__description">
+                            Conception et développement d'une plateforme événementielle haut de gamme. 
+                            De l'idéation à la mise en production, j'ai piloté l'ensemble du projet : 
+                            étude de marché, UX research, wireframing, prototypage et développement front-end.
+                        </p>
+                        <ul class="project-card__features">
+                            <li>Étude de marché et positionnement</li>
+                            <li>UX Research et personas</li>
+                            <li>Design system et prototypage Figma</li>
+                            <li>Développement HTML/CSS/JS</li>
+                            <li>Stratégie SEO et acquisition</li>
+                        </ul>
+                        <div class="project-card__stack">
+                            <span>Figma</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA FINAL -->
+            <section class="cta-section" data-animate="zoom-in">
+                <div class="cta-section__content">
+                    <h2 class="cta-section__title">Prêt à collaborer ?</h2>
+                    <p class="cta-section__text">
+                        Vous avez un projet digital ambitieux ?<br>
+                        Discutons de comment je peux vous aider à le réaliser.
+                    </p>
+                    <div class="cta-section__buttons">
+                        <a href="contact.html" class="btn btn--large btn--primary">Me contacter</a>
+                        <a href="cv-axel-courty.pdf" download class="btn btn--large btn--outline">
+                            📄 Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p>&copy; 2026 Axel Courty — Tous droits réservés</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
