@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axel Courty | Chef de projet digital</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- CSS externe -->
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- HERO SECTION -->
+    <!-- ========== HERO ========== -->
     <section class="hero">
         <div class="hero__container">
             <div class="hero__content">
-                <h1 class="hero__title">Transformer les idées<br>en projets concrets</h1>
-                <p class="hero__subtitle">Chef de projet digital passionné par l'innovation<br>et l'excellence opérationnelle</p>
-                <a href="contact.html" class="hero__cta">Contactez-moi</a>
+                <p class="hero__tag">Chef de projet digital</p>
+                <h1 class="hero__title">Axel Courty</h1>
+                <p class="hero__subtitle">
+                    Étudiant en Bachelor Chef de projet Digital à Ynov Campus Bordeaux,<br>
+                    actuellement en alternance chez Orange.
+                </p>
+                <div class="hero__actions">
+                    <a href="contact.html" class="hero__cta hero__cta--primary">Me contacter</a>
+                    <a href="#parcours" class="hero__cta hero__cta--secondary">Découvrir mon parcours</a>
+                </div>
             </div>
         </div>
         <div class="hero__scroll">
@@ -29,105 +35,263 @@
         </div>
     </section>
 
-    <!-- CE QUE JE RECHERCHE -->
-    <section class="search">
+    <!-- ========== PROFIL ========== -->
+    <section class="profile" id="profil">
         <div class="container">
-            <h2 class="section__title">Ce que je recherche</h2>
-            <p class="search__intro">
-                Des missions et opportunités où je peux mettre mon expertise au service 
-                de projets ambitieux et créer de la valeur ajoutée mesurable.
-            </p>
-            <div class="search__cards">
-                <div class="search__card">
-                    <div class="search__icon">🚀</div>
-                    <h3>Gestion de projets digitaux</h3>
-                    <p>Pilotage de A à Z de projets web, applications, plateformes e-commerce avec méthodologies agiles</p>
+            <div class="profile__grid">
+                <div class="profile__text">
+                    <p class="profile__label">Profil</p>
+                    <h2 class="section__title">Passionné par la gestion de projet et la transformation digitale</h2>
+                    <p class="profile__description">
+                        Actuellement en dernière année de Bachelor Chef de projet Digital à Ynov Campus,
+                        je développe mes compétences en gestion de projet, coordination d’équipes
+                        et stratégie digitale au sein d’Orange Bordeaux. Certifié Professional Scrum
+                        Master I, je m’appuie sur les méthodologies agiles pour mener à bien chaque mission.
+                    </p>
                 </div>
-                <div class="search__card">
-                    <div class="search__icon">🎯</div>
-                    <h3>Coordination transverse</h3>
-                    <p>Animation d'équipes pluridisciplinaires, alignement des parties prenantes, suivi budgétaire</p>
-                </div>
-                <div class="search__card">
-                    <div class="search__icon">⚡</div>
-                    <h3>Transformation digitale</h3>
-                    <p>Accompagnement au changement, refonte de process, optimisation de l'expérience utilisateur</p>
+                <div class="profile__details">
+                    <div class="profile__detail">
+                        <span class="profile__detail-label">Localisation</span>
+                        <span class="profile__detail-value">Bordeaux, France</span>
+                    </div>
+                    <div class="profile__detail">
+                        <span class="profile__detail-label">Formation</span>
+                        <span class="profile__detail-value">Bachelor Chef de projet Digital — Ynov Campus</span>
+                    </div>
+                    <div class="profile__detail">
+                        <span class="profile__detail-label">Certification</span>
+                        <span class="profile__detail-value">Professional Scrum Master I</span>
+                    </div>
+                    <div class="profile__detail">
+                        <span class="profile__detail-label">Langues</span>
+                        <span class="profile__detail-value">Français (natif) · Anglais (B1)</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CE QUE JE SAIS FAIRE -->
-    <section class="skills">
+    <!-- ========== EXPÉRIENCES ========== -->
+    <section class="experiences" id="parcours">
         <div class="container">
-            <h2 class="section__title section__title--light">Ce que je sais faire</h2>
-            
+            <p class="experiences__label">Parcours</p>
+            <h2 class="section__title">Expériences professionnelles</h2>
+
+            <div class="timeline">
+                <!-- Exp 1 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <span class="timeline__date">Sept. 2025 — Sept. 2026</span>
+                            <span class="timeline__company">Orange · Bordeaux</span>
+                        </div>
+                        <h3 class="timeline__title">Alternance — Gestion de projet &amp; Gestion de risque</h3>
+                        <ul class="timeline__tasks">
+                            <li>Gestion de projets d’aménagement pour les boutiques et bureaux Orange (déménagements, modernisations)</li>
+                            <li>Coordination du matériel des employés avec ajustements selon les besoins spécifiques de chaque poste</li>
+                            <li>Organisation d’événements de vente hors établissements (foires, forums)</li>
+                        </ul>
+                        <div class="timeline__tags">
+                            <span>Gestion de projet</span>
+                            <span>Gestion de risque</span>
+                            <span>Coordination</span>
+                            <span>Événementiel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <span class="timeline__date">Avril — Juin 2025</span>
+                            <span class="timeline__company">Atelier Immobilier · Gujan-Mestras</span>
+                        </div>
+                        <h3 class="timeline__title">Stage — Community Manager, SEO &amp; Événementiel</h3>
+                        <ul class="timeline__tasks">
+                            <li>Création de supports visuels pour valoriser les biens immobiliers</li>
+                            <li>Optimisation du référencement web avec une hausse du trafic de +100%</li>
+                            <li>Organisation d’événements clients (sessions de padel, buffets)</li>
+                        </ul>
+                        <div class="timeline__tags">
+                            <span>Community Management</span>
+                            <span>SEO</span>
+                            <span>Création graphique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <span class="timeline__date">Sept. 2024 — Juin 2025</span>
+                            <span class="timeline__company">Boulanger · Mérignac</span>
+                        </div>
+                        <h3 class="timeline__title">CDD — Conseiller Service Clients</h3>
+                        <ul class="timeline__tasks">
+                            <li>Optimisation de l’expérience de ≈ 4 000 clients/jour</li>
+                            <li>Analyse des besoins et mise en œuvre de solutions personnalisées</li>
+                        </ul>
+                        <div class="timeline__tags">
+                            <span>Relation client</span>
+                            <span>Conseil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 4 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <span class="timeline__date">Juin — Juillet 2022</span>
+                            <span class="timeline__company">SuperValu · Irlande</span>
+                        </div>
+                        <h3 class="timeline__title">Stage — Animation Commerciale</h3>
+                        <ul class="timeline__tasks">
+                            <li>Mise en valeur des produits via des démonstrations dynamiques</li>
+                            <li>Présentations captivantes pour stimuler l’intérêt et les ventes</li>
+                        </ul>
+                        <div class="timeline__tags">
+                            <span>Animation commerciale</span>
+                            <span>International</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FORMATION ========== -->
+    <section class="education" id="formation">
+        <div class="container">
+            <p class="education__label">Formation</p>
+            <h2 class="section__title section__title--light">Éducation &amp; Certifications</h2>
+
+            <div class="education__grid">
+                <div class="education__card">
+                    <span class="education__period">2023 — 2026</span>
+                    <h3 class="education__degree">Bachelor Chef de projet Digital</h3>
+                    <p class="education__school">Ynov Campus — Bordeaux</p>
+                </div>
+                <div class="education__card">
+                    <span class="education__period">2019 — 2023</span>
+                    <h3 class="education__degree">Baccalauréat Vente — Mention Bien</h3>
+                    <p class="education__school">Lycée de la Mer — Arcachon · Section Européenne</p>
+                </div>
+                <div class="education__card education__card--cert">
+                    <span class="education__period">Certification</span>
+                    <h3 class="education__degree">Professional Scrum Master I</h3>
+                    <p class="education__school">Scrum.org</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJET ========== -->
+    <section class="project" id="projet">
+        <div class="container">
+            <p class="project__label">Projet académique</p>
+            <h2 class="section__title">Nuits Élégantes</h2>
+
+            <div class="project__card">
+                <div class="project__info">
+                    <span class="project__type">Événementiel · Mars 2024</span>
+                    <p class="project__description">
+                        Organisation complète d’un événement haut de gamme dans le cadre de ma formation,
+                        de la conception à la réalisation.
+                    </p>
+                    <ul class="project__features">
+                        <li>Gestion d’un budget de 50 000 € avec optimisation des coûts</li>
+                        <li>Élaboration d’un plan de communication multicanal (réseaux sociaux, presse, e-mailing)</li>
+                        <li>Négociation des partenariats (bar, traiteur) avec définition des responsabilités</li>
+                    </ul>
+                    <div class="project__tags">
+                        <span>Budget 50K€</span>
+                        <span>Communication</span>
+                        <span>Partenariats</span>
+                        <span>Pilotage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section class="skills" id="competences">
+        <div class="container">
+            <p class="skills__label">Compétences</p>
+            <h2 class="section__title">Ce que je maîtrise</h2>
+
             <div class="skills__grid">
-                <!-- Colonne 1 : Méthodes -->
                 <div class="skills__column">
-                    <h3 class="skills__subtitle">Méthodes & Pilotage</h3>
+                    <h3 class="skills__subtitle">Gestion de projet</h3>
                     <ul class="skills__list">
-                        <li>Gestion de projet Agile (Scrum, Kanban)</li>
-                        <li>Design Thinking & Lean Startup</li>
-                        <li>Roadmapping & priorisation</li>
-                        <li>Planification stratégique</li>
-                        <li>Gestion des risques</li>
+                        <li>Méthodologies Agile (Scrum, Kanban)</li>
+                        <li>Gestion de risque</li>
+                        <li>Coordination d’équipes</li>
+                        <li>Planification &amp; Budgétisation</li>
+                        <li>Événementiel</li>
                     </ul>
                 </div>
-
-                <!-- Colonne 2 : Compétences digitales -->
                 <div class="skills__column">
-                    <h3 class="skills__subtitle">Digital & UX</h3>
+                    <h3 class="skills__subtitle">Digital &amp; Communication</h3>
                     <ul class="skills__list">
-                        <li>UX/UI Design & prototypage</li>
-                        <li>SEO / SEA / Analytics</li>
-                        <li>Content Management (CMS)</li>
-                        <li>E-commerce & conversion</li>
-                        <li>Stratégie Social Media</li>
-                        <li>Accessibilité & RGPD</li>
+                        <li>SEO / Référencement web</li>
+                        <li>Community Management</li>
+                        <li>Stratégie de communication multicanal</li>
+                        <li>Création de contenus visuels</li>
+                        <li>E-mailing &amp; Relations presse</li>
                     </ul>
                 </div>
-
-                <!-- Colonne 3 : Outils -->
                 <div class="skills__column">
-                    <h3 class="skills__subtitle">Outils & Technologies</h3>
+                    <h3 class="skills__subtitle">Outils</h3>
                     <ul class="skills__list">
-                        <li>Jira, Trello</li>
-                        <li>Figma, Suite Adobe</li>
-                        <li>Google Analytics</li>
-                        <li>Notion, Miro</li>
-                        <li>Open AI, Copilot</li>
-                        <li>Vibe codding, HTML/CSS/JS</li>
+                        <li>Notion</li>
+                        <li>Figma</li>
+                        <li>Suite Adobe (Photoshop, Illustrator…)</li>
+                        <li>Suite Microsoft (Excel, PowerPoint…)</li>
+                        <li>WordPress &amp; Shopify</li>
                     </ul>
-                </div>
-            </div>
-
-            <!-- Points forts -->
-            <div class="skills__highlights">
-                <div class="highlight">
-                    <span class="highlight__number">+50</span>
-                    <span class="highlight__label">Projets livrés</span>
-                </div>
-                <div class="highlight">
-                    <span class="highlight__number">100%</span>
-                    <span class="highlight__label">Satisfaction client</span>
-                </div>
-                <div class="highlight">
-                    <span class="highlight__number">3 ans</span>
-                    <span class="highlight__label">D'apprentisage</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ========== CTA ========== -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Un projet en tête ?</h2>
+                <p class="cta__text">
+                    Je suis disponible pour échanger sur vos besoins en gestion de projet digital,
+                    coordination d’équipes ou stratégie de communication.
+                </p>
+                <a href="contact.html" class="cta__button">Prendre contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Axel Courty — Chef de projet digital</p>
             <div class="footer__links">
                 <a href="contact.html">Contact</a>
                 <a href="https://linkedin.com/in/axelcourty" target="_blank">LinkedIn</a>
-                <a href="mailto:axel.courty@orange.fr">Email</a>
+                <a href="mailto:axel.courty@ynov.com">Email</a>
             </div>
         </div>
     </footer>
