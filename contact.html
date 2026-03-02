@@ -3,166 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Axel Courty \u2014 Chef de projet digital</title>
-
+    <title>Contact | Axel Courty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="contact-page">
 
-    <nav class="contact-nav">
-        <a href="index.html" class="contact-nav__back">
-            <span class="arrow">\u2190</span>
-            <span>Retour au portfolio</span>
-        </a>
-    </nav>
+    <a href="index.html" class="back-link">← Retour au portfolio</a>
 
-    <main class="contact-main">
+    <main class="contact-wrapper">
 
-        <section class="contact-info">
-            <div class="contact-info__content">
-                <p class="contact-info__greeting">Travaillons ensemble</p>
-                <h1 class="contact-info__title">
-                    Vous avez un projet ?<br>
-                    <span class="highlight">Parlons-en.</span>
-                </h1>
-                <p class="contact-info__description">
-                    Que ce soit pour une mission en gestion de projet, une opportunit\u00e9
-                    d\u2019alternance ou simplement \u00e9changer sur vos id\u00e9es digitales,
-                    je suis \u00e0 votre \u00e9coute.
-                </p>
+        <div class="contact-block">
+            <span class="contact-label">Email</span>
+            <a href="mailto:axel.courty@ynov.com" class="contact-value">axel.courty@ynov.com</a>
+        </div>
 
-                <div class="contact-info__details">
-                    <div class="contact-detail">
-                        <span class="contact-detail__icon">\ud83d\udccd</span>
-                        <div class="contact-detail__text">
-                            <span class="label">Localisation</span>
-                            <span class="value">Bordeaux, France</span>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <span class="contact-detail__icon">\u260e\ufe0f</span>
-                        <div class="contact-detail__text">
-                            <span class="label">T\u00e9l\u00e9phone</span>
-                            <a href="tel:+33679395251" class="value">06 79 39 52 51</a>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <span class="contact-detail__icon">\u2709\ufe0f</span>
-                        <div class="contact-detail__text">
-                            <span class="label">Email</span>
-                            <a href="mailto:axel.courty@ynov.com" class="value">axel.courty@ynov.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <span class="contact-detail__icon">\ud83d\udd17</span>
-                        <div class="contact-detail__text">
-                            <span class="label">LinkedIn</span>
-                            <a href="https://linkedin.com/in/axelcourty" target="_blank" class="value">linkedin.com/in/axelcourty</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="contact-block">
+            <span class="contact-label">Téléphone</span>
+            <a href="tel:+33679395251" class="contact-value">06 79 39 52 51</a>
+        </div>
 
-                <div class="contact-info__availability">
-                    <span class="status-dot"></span>
-                    <span>Disponible pour de nouvelles opportunit\u00e9s</span>
-                </div>
-            </div>
-        </section>
+        <div class="contact-block">
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/axelcourty" target="_blank" class="contact-value">Axel Courty</a>
+        </div>
 
-        <section class="contact-form-section">
-            <form class="contact-form" id="contactForm">
-                <div class="form-header">
-                    <h2>Envoyez-moi un message</h2>
-                    <p>Je vous r\u00e9pondrai dans les plus brefs d\u00e9lais.</p>
-                </div>
-
-                <div class="form-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="company">Entreprise <span class="optional">(optionnel)</span></label>
-                    <input type="text" id="company" name="company" placeholder="Nom de votre entreprise">
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Sujet</label>
-                    <select id="subject" name="subject" required>
-                        <option value="" disabled selected>S\u00e9lectionnez un sujet</option>
-                        <option value="emploi">Opportunit\u00e9 d'emploi</option>
-                        <option value="alternance">Alternance / Stage</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="question">Question g\u00e9n\u00e9rale</option>
-                        <option value="autre">Autre</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="D\u00e9crivez votre projet ou votre demande..." required></textarea>
-                </div>
-
-                <button type="submit" class="form-submit">
-                    <span>Envoyer le message</span>
-                    <span class="submit-icon">\u2192</span>
-                </button>
-
-                <p class="form-note">
-                    \ud83d\udd12 Vos donn\u00e9es sont s\u00e9curis\u00e9es et ne seront jamais partag\u00e9es.
-                </p>
-            </form>
-        </section>
+        <div class="contact-block">
+            <span class="contact-label">Disponibilité</span>
+            <p class="contact-value">Actuellement disponible pour de nouvelles opportunités</p>
+            <p class="contact-status">
+                <span class="status-dot"></span>
+                En ligne
+            </p>
+        </div>
 
     </main>
-
-    <div class="success-message" id="successMessage">
-        <div class="success-content">
-            <span class="success-icon">\u2713</span>
-            <h3>Message envoy\u00e9 !</h3>
-            <p>Merci pour votre message. Je vous r\u00e9pondrai tr\u00e8s rapidement.</p>
-            <button class="success-close" onclick="closeSuccess()">Fermer</button>
-        </div>
-    </div>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            var submitBtn = document.querySelector('.form-submit');
-            submitBtn.innerHTML = '<span>Envoi en cours...</span>';
-            submitBtn.disabled = true;
-            setTimeout(function() {
-                document.getElementById('successMessage').classList.add('show');
-                submitBtn.innerHTML = '<span>Envoyer le message</span><span class="submit-icon">\u2192</span>';
-                submitBtn.disabled = false;
-                document.getElementById('contactForm').reset();
-            }, 1500);
-        });
-
-        function closeSuccess() {
-            document.getElementById('successMessage').classList.remove('show');
-        }
-
-        document.querySelectorAll('.form-group input, .form-group textarea, .form-group select').forEach(function(input) {
-            input.addEventListener('focus', function() {
-                this.parentElement.classList.add('focused');
-            });
-            input.addEventListener('blur', function() {
-                if (!this.value) {
-                    this.parentElement.classList.remove('focused');
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>
