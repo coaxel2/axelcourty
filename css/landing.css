@@ -8,7 +8,7 @@
 }
 
 /* ========================================
-   LANDING PAGE - CONTAINER PRINCIPAL
+   LANDING PAGE
 ======================================== */
 .landing {
     min-height: 100vh;
@@ -18,53 +18,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    /* Dégradé orangé vif - du noir vers orange pétant */
+
+    /* Dégradé corporate — noir profond vers bleu nuit */
     background: linear-gradient(
-        135deg,
-        #000000 0%,
-        #1a0800 15%,
-        #4a1a00 30%,
-        #8a2e00 45%,
-        #c44200 55%,
-        #e85500 70%,
-        #ff6600 85%,
-        #ff7020 100%
+        160deg,
+        #04070d 0%,
+        #0a1122 20%,
+        #0f1a33 40%,
+        #132244 60%,
+        #162a50 80%,
+        #1a3158 100%
     );
-    
-    /* Police serif élégante */
+
     font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     color: #ffffff;
     text-align: center;
-    
-    /* Animation d'entrée subtile */
+
     animation: fadeIn 1.5s ease-out;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* ========================================
-   LOGO
-======================================== */
-.landing__logo {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: auto;
-    height: 100px;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-.landing__logo:hover {
-    opacity: 1;
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* ========================================
@@ -75,8 +50,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    
-    /* Animation d'apparition */
     animation: slideUp 1.2s ease-out 0.3s both;
 }
 
@@ -91,30 +64,38 @@
     }
 }
 
+/* Ligne décorative */
+.landing__content::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.35);
+    margin-bottom: 1.5rem;
+}
+
 /* ========================================
    TITRE PRINCIPAL
 ======================================== */
 .landing__title {
     font-size: clamp(3rem, 10vw, 6rem);
-    font-weight: 500;
-    letter-spacing: 0.15em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-    
-    /* Ombre subtile pour profondeur */
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* ========================================
    SOUS-TITRE
 ======================================== */
 .landing__subtitle {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    font-weight: 400;
-    letter-spacing: 0.3em;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-weight: 300;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
-    opacity: 0.9;
-    margin-bottom: 3rem;
+    opacity: 0.6;
+    margin-bottom: 3.5rem;
 }
 
 /* ========================================
@@ -122,32 +103,25 @@
 ======================================== */
 .landing__button {
     display: inline-block;
-    padding: 1rem 3rem;
-    
-    /* Style discret et élégant */
+    padding: 1rem 3.5rem;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50px;
-    
-    /* Typographie cohérente */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0;
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 400;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    
-    /* Curseur et transition */
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
 }
 
 .landing__button:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.8);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.35em;
 }
 
 .landing__button:active {
@@ -161,11 +135,9 @@
     .landing__title {
         letter-spacing: 0.1em;
     }
-    
     .landing__subtitle {
         letter-spacing: 0.2em;
     }
-    
     .landing__button {
         padding: 0.875rem 2.5rem;
         font-size: 0.9rem;
